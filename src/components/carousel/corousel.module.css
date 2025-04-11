@@ -1,0 +1,99 @@
+:root {
+  --bs-white: #FDFFFC;
+  --bs-blue: #3131ED;
+  --bs-bluevice: #00003D;
+  --bs-purewhite: #ffffff;
+  --bs-purple:#ADADFF;
+ 
+
+
+    
+    --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+}
+
+
+
+
+.conteiner{
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center; 
+  margin-bottom: -10vh; 
+  /*  */
+}
+
+
+/*trocar imagem porque ta ruim isso aqui*/
+.conteinerimg{
+   width: 30%;
+   margin-left: 14vw;
+   background-color: #ffffff;
+
+}
+
+
+
+
+
+
+
+
+.CarouselStyle{
+    background-color:var(--bs-bluevice);
+    width: 50% !important;  /*arrumar aqui para ajustar texto*/
+    /* margin: 11.5em; */
+    display: flexbox;
+    height: 30em !important;
+    margin: 11.5em;
+     
+}
+
+.TextContent{
+    margin: 20%;
+    font-size: 20px;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  .CarouselStyle {
+    width: 100% !important;
+    height: 70vw !important;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .TextContent{
+    font-size: 12px;
+    margin: 8em;
+    /* display: block; */
+    /* padding: 50px; */
+    text-align:justify;
+    margin-top: 10em;
+ }
+ .conteinerimg{
+  display: none;
+ }
+
+ .ContentSpan{
+  display: none;
+ }
+
+}
+
+  
+  /* .sizeimage:hover {
+
+    transition: transform 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000); 
+    transform: scale(1.1); 
+ 
+  }  */
+
+
+  
+
+
+
