@@ -91,7 +91,9 @@ function NavBar({ toggleDarkMode, darkMode }) {
                     </ul>
                     </div>
                 </nav>
+                <div className={style.ConteinerLineblock}>
                 <div className={style.lineblock}></div>
+                </div>
             </div>
         </header>
 

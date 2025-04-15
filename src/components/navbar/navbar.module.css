@@ -43,14 +43,19 @@
 }
 
 
-.lineblock{
+.ConteinerLineblock {
     position: relative;
-    left: 60vh;
-    bottom: 90px;
+  }
+  
+  .lineblock {
+    position: absolute;
+    left: 30%;
+    bottom: 20px;
     width: 2px;
     height: 70px;
     background-color: var(--bs-purewhite);
-}
+    transform: translateX(-50%);
+  }
 
 
 /*arrumar o tamanho*/
@@ -66,11 +71,7 @@
 
 .NavBarElement {
    height: 50px;
-   /* position: relative;
-   bottom:60px; */
    list-style-type: none;
-   /* padding-top: 5px !important;  */
-
 }
 
 .NavBarLink{
@@ -205,6 +206,85 @@
 
 /*versao mobile que Deus sabe como ta sendo dificil*/
 
+@media (max-width: 1458px) and (min-width:991px) {
+    .ConteinerLineblock {
+        position: relative;
+      }
+
+
+      .LogoPagNav{
+        width: 128px;
+        position:fixed;
+        left:90px;
+    }
+      
+      .lineblock {
+        position: absolute;
+        left: 25%;
+        bottom: 20px;
+        width: 2px;
+        height: 70px;
+        background-color: var(--bs-purewhite);
+        transform: translateX(-50%);
+      }
+      
+    .NavBar{
+        position:relative; 
+        left: 7em;
+
+        
+    }
+
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .LogoPagNav{
+        width: 120px;
+        position:fixed;
+        left:60px;
+    }
+    
+    .ConteinerLineblock {
+      position: relative;
+    }
+  
+    .lineblock {
+      position: absolute;
+      left: 24%;         
+      bottom: 30px;     
+      width: 2px;
+      height: 50px;      
+      background-color: var(--bs-purewhite);
+      transform: translateX(-50%);
+    }
+  
+    .NavBarLink{
+      position:relative;
+      left: 9em;
+      font-size: 12px;
+     
+             
+    }
+
+    .themeToggle {
+    
+        float: right;
+        border: none;
+        cursor: pointer;
+        position: relative;
+        top: 5px;
+        right: 40px;
+        font-size: 10px;
+        background-color: transparent; 
+        color:inherit;
+        transition: background-color 0.3s, color 0.3s;
+    }
+    
+  }
+
+
+
+  
 
 @media (max-width: 768px) {
     
@@ -284,18 +364,18 @@
     }
 
 
-    .NavBarElement{
+    .NavBarElement {
         position: relative;
+        font-size:20px ;
         top: 10vh;
-        right: 10px;
-        margin: 10px;
+        left: 20px;
+        margin: 10px auto;
         padding-top: 2em;
         height: 3px;
-        
-        /* padding-left:5px; */
-        
+        width: 200px; /* Define uma largura pra centralizar */
     }
-    
+
+
         .bgcolorNavBar{
          padding-top: 50px;
         
