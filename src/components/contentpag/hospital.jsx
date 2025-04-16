@@ -92,6 +92,52 @@ function ContentPag(){
     <img src={images.backgroundWithHand} alt="machinemedican" />
   </div>
 </section>
+<section>
+  <div className={style.ContentImageIcones}>
+    <div>
+      <img src={images.circleicon} alt="Missão" />
+      <h3>Missão</h3>
+      <p>
+        Oferecer atendimento médico de excelência, unindo tecnologia de ponta e profissionais qualificados, sempre pautados pela ética e pelo respeito ao indivíduo. Nosso compromisso é proporcionar cuidados inovadores e humanizados, promovendo saúde e bem-estar.
+      </p>
+    </div>
+    <div>
+      <img src={images.eyesicon} alt="Visão" />
+      <h3>Visão</h3>
+      <p>
+        Ser uma instituição de referência no setor hospitalar, reconhecida pela qualidade, inovação e excelência no atendimento, destacando-se na assistência de média e alta complexidade.
+      </p>
+    </div>
+    <div>
+      <img src={images.staricon} alt="Valores" />
+      <h3>Valores</h3>
+      <p>
+        Ética, Responsabilidade, Respeito, Inovação, Dedicação, Humanização e Qualidade.
+      </p>
+    </div>
+  </div>
+</section>
+<section className={style.Agendamento}>
+  <div className={style.Texto}>
+    <h2>
+      Faça seu agendamento<br />
+      Médico com os melhores<br />
+      especialistas da área
+    </h2>
+    <div className={style.Linha}></div>
+    <button className={style.Botao}>
+      Marque uma Consulta <img src={images.whatsappicon} alt="Whatsapp contato" /> 
+    </button>
+  </div>
+
+  <div className={style.CardMedico}>
+  {/* <UncontrolledExample /> */}
+    {/* <img src={images.medico1} alt="Dr. Thiago Ferreira – Neurologia" /> */}
+    <p><strong>Dr. Thiago Ferreira – Neurologia</strong></p>
+    <span>"Compromisso com a Saúde e Qualidade de Vida"</span>
+  </div>
+</section>
+
 
         {/* <UncontrolledExample />
       <footer className={style.backgroundContentTextPagFooter} >

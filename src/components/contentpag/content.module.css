@@ -110,7 +110,112 @@
 
   
 
+  .ContentImageIcones {
+    display: flex;
+    justify-content: center;
+    gap: 14em;
+    padding: 7em;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  
+  .ContentImageIcones > div {
+    max-width: 300px;
+  }
+  
+  .ContentImageIcones img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+  
+  .ContentImageIcones h3 {
+    font-size: 30px;
+    color:var(--bs-blue);
+    font-weight: bold;
+    margin-bottom: 10px;
+    
+  }
+  
+  .ContentImageIcones p {
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0.3px;
+  }
+  
 
+
+  .ContentImageIcones img {
+    width: 100px; 
+    height: 100px;
+  }
+
+
+
+  
+
+
+  .Agendamento {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top:60px;
+    gap: 60px;
+    flex-wrap: wrap;
+  }
+
+  
+  .Texto h2 {
+    font-size: 24px;
+    font-weight:bolder;
+    margin-bottom: 10px;
+  }
+  
+  .Linha {
+    width: 400px;
+    height: 4px;
+    background-color:var(--bs-blue); /* Azul vibrante */
+    margin-bottom: 8vh;
+  }
+  
+  .Botao {
+    background-color: var(--bs-purple);
+    color:var(--bs-blue);
+    padding: 14px;
+    width: 30em;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .Botao:hover {
+    background-color: #8c8cff;
+  }
+  
+  .CardMedico {
+    text-align: center;
+    flex: 1;
+    max-width: 300px;
+  }
+  
+  .CardMedico img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 10px;
+  }
+  
+  .CardMedico p {
+    margin-top: 12px;
+    font-weight: 600;
+  }
+  
+  .CardMedico span {
+    font-size: 14px;
+    color: #444;
+  }
 
 
 
