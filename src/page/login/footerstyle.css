@@ -1,0 +1,50 @@
+.footer {
+    background-color: #030050;
+  color: white;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  }
+  
+  .footer-content {
+    display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: flex-start;
+   margin: 70px;/*mudei aqui pra ver como se comporta*/
+   gap: 20px;
+  }
+  
+
+  
+  .footer-left {
+    flex: 1 1 300px;
+    /* margin: 8px 0; */
+  }
+  
+  .footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 150px;
+  }
+  
+  .footer-right .logo {
+    width: 50px;
+    margin-bottom: 8px;
+  }
+  
+  .footer-right .brand {
+    font-size: 2.0rem;
+    font-weight: bold;
+    color: var(--bs-blue);
+    margin: 0;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+  margin-top: 10vh;/*mexi aqui na altura pra testar*/
+  font-size: 0.8rem;
+  border-top: 1px solid #ffffff33;
+  padding-top: 10px;
+  }
+  

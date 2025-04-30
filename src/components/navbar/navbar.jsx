@@ -81,7 +81,7 @@ function NavBar({ toggleDarkMode, darkMode }) {
                             <Link to="/Pacientes" className={classNames(style.NavBarLink, style.NavBarLinkUnderline)}>Pacientes</Link>
                         </li>
                         <li className={style.NavBarElement}>
-                            <Link to="/Blog" className={classNames(style.NavBarLink, style.NavBarLinkUnderline)}>Blog</Link>
+                            <Link to="/Login" className={classNames(style.NavBarLink, style.NavBarLinkUnderline)}>Login</Link>
                         </li>
                         {/* <li className={style.NavBarElement}>
                             <button onClick={toggleDarkMode} className={style.themeToggle}>

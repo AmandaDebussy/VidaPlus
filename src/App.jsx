@@ -4,13 +4,16 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NavBar from './components/navbar/navbar.jsx';
 import ContentPag from './components/contentpag/hospital.jsx';
 import './App.css';
+// import Login from "./pages/Login.jsx";
+// import Dashboard from "./pages/Dashboard.jsx";
 
 const Hospital = React.lazy(()=> import('./components/contentpag/hospital.jsx'))
 const Estrutura = React.lazy(() => import('./page/estrutura.jsx'));
 const Pacientes = React.lazy(()=> import('./page/pacientes.jsx'));
 const Qualidade = React.lazy(()=> import('./page/qualidade.jsx'));
 const Servicos = React.lazy(()=> import('./page/servicos.jsx'));
-const Blog = React.lazy(()=> import('./page/blog.jsx'));
+const Login = React.lazy(()=> import('./page/login/login.jsx'));
+const Dashboard = React.lazy(()=> import('./page/dashboard/dashboard.jsx'));
 
 function App() {
   
@@ -45,7 +48,9 @@ function App() {
               <Route path="/pacientes" element={<Pacientes />} />
               <Route path="/qualidade" element={<Qualidade />} />
               <Route path="/servicos" element={<Servicos />} />
-              <Route path="/blog" element={<Blog />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/dashboard" element={<Dashboard />} />
+
           </Routes>
         </Suspense>
       </main>

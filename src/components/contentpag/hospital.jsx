@@ -2,7 +2,7 @@ import React from 'react';
 import images from './../image'
 import style from './content.module.css';
 import UncontrolledExample from '../carousel/carousel';
-import { BsFacebook, BsGithub, BsLinkedin, BsInstagram } from "react-icons/bs";
+// import { BsFacebook, BsGithub, BsLinkedin, BsInstagram } from "react-icons/bs";
 
 
 
