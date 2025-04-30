@@ -16,84 +16,29 @@
 
 
 
-.conteiner{
-  display: flex;
-  justify-content: flex-end; 
-  align-items: center; 
-  margin-bottom: -10vh; 
-  /*  */
-}
+/* .conteiner{
+ 
 
+} */
 
-/*trocar imagem porque ta ruim isso aqui*/
-.conteinerimg{
-   width: 30%;
-   margin-left: 14vw;
-   background-color: #ffffff;
-
-}
-
-
-
-
-
-
-
-
-.CarouselStyle{
-    background-color:var(--bs-bluevice);
-    width: 50% !important;  /*arrumar aqui para ajustar texto*/
-    /* margin: 11.5em; */
-    display: flexbox;
-    height: 30em !important;
-    margin: 11.5em;
-     
-}
 
 .TextContent{
-    margin: 20%;
-    font-size: 20px;
+  font-weight:bold;
+  text-align: center;
+  font-size: 15px;
+}
+
+.TextContent p {
+  font-size:14px;
+  font-weight:normal;
 }
 
 
-
-
-
-@media (max-width: 768px) {
-  .CarouselStyle {
-    width: 100% !important;
-    height: 70vw !important;
-    margin: 0 auto;
-    padding: 0;
-  }
-  .TextContent{
-    font-size: 12px;
-    margin: 8em;
-    /* display: block; */
-    /* padding: 50px; */
-    text-align:justify;
-    margin-top: 10em;
- }
- .conteinerimg{
-  display: none;
- }
-
- .ContentSpan{
-  display: none;
- }
-
+.carousel-control-prev,
+.carousel-control-next {
+  top: 90% !important; /* sobe as setas */
+  transform: translateY(-50%) !important; /* centraliza verticalmente */
 }
-
-  
-  /* .sizeimage:hover {
-
-    transition: transform 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000); 
-    transform: scale(1.1); 
- 
-  }  */
-
-
-  
 
 
 

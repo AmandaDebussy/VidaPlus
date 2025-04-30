@@ -196,26 +196,21 @@
   }
   
   .CardMedico {
-    text-align: center;
     flex: 1;
     max-width: 300px;
   }
   
   .CardMedico img {
     width: 100%;
-    max-width: 250px;
-    border-radius: 10px;
+    max-width: 350px;
+    border-radius: 5px;
   }
   
   .CardMedico p {
-    margin-top: 12px;
-    font-weight: 600;
+    margin-top: 10px;
   }
   
-  .CardMedico span {
-    font-size: 14px;
-    color: #444;
-  }
+
 
 
 

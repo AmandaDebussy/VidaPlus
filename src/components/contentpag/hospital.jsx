@@ -131,10 +131,11 @@ function ContentPag(){
   </div>
 
   <div className={style.CardMedico}>
-  {/* <UncontrolledExample /> */}
+  <UncontrolledExample />
     {/* <img src={images.medico1} alt="Dr. Thiago Ferreira – Neurologia" /> */}
-    <p><strong>Dr. Thiago Ferreira – Neurologia</strong></p>
-    <span>"Compromisso com a Saúde e Qualidade de Vida"</span>
+    {/* <p><strong>Dr. Thiago Ferreira – Neurologia</strong></p>
+    <span>"Compromisso com a Saúde e Qualidade de Vida"</span> */}
+    
   </div>
 </section>
 

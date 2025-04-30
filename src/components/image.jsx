@@ -6,6 +6,10 @@ import eyesicon from'./../assets/Eye.png'
 import circleicon from './../assets/Bullseye.png'
 import staricon from './../assets/start.png'
 import whatsappicon from './../assets/whatsappicon.png'
+import medico1 from './../assets/medicos/medico1.png'
+import medico2 from './../assets/medicos/medico2.png'
+import medico3 from './../assets/medicos/medico3.png'
+import medico4 from './../assets/medicos/medico4.png'
 
 
 const images = {
@@ -17,6 +21,11 @@ const images = {
     circleicon,
     staricon,
     whatsappicon,
+    medico1,
+    medico2,
+    medico3,
+    medico4
+
 }
 
 
