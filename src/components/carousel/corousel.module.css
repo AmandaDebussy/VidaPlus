@@ -33,12 +33,3 @@
   font-weight:normal;
 }
 
-
-.carousel-control-prev,
-.carousel-control-next {
-  top: 90% !important; /* sobe as setas */
-  transform: translateY(-50%) !important; /* centraliza verticalmente */
-}
-
-
-
