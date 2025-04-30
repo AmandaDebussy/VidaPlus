@@ -9,6 +9,10 @@ import { BsFacebook, BsGithub, BsLinkedin, BsInstagram } from "react-icons/bs";
 
 function ContentPag(){
 
+  
+    const currentYear = new Date().getFullYear();
+
+
   //text edit in <span style={colortext}>
   // const colortext = {
   //   backgroundColor: '#FF9F1C',
@@ -132,29 +136,32 @@ function ContentPag(){
 
   <div className={style.CardMedico}>
   <UncontrolledExample />
-    {/* <img src={images.medico1} alt="Dr. Thiago Ferreira – Neurologia" /> */}
-    {/* <p><strong>Dr. Thiago Ferreira – Neurologia</strong></p>
-    <span>"Compromisso com a Saúde e Qualidade de Vida"</span> */}
-    
+    </div>
+</section>
+<section>
+  <div className={style.contentImageMedicos}>
+  <img src={images.medicosunidos} alt="medicosjuntos" />
   </div>
 </section>
-
-
-        {/* <UncontrolledExample />
-      <footer className={style.backgroundContentTextPagFooter} >
-        <div className={style.contentetexpagFooter}>
-           <div className={style.LineFooter}></div>
-           <ul>
-            <p>Ru: 4443693</p>
-            <span>|</span>
-           <p> Social Media</p>
-           <li><a href="https://www.facebook.com/amandiinha.yuii" target='_blank' rel="noopener noreferrer" ><BsFacebook className={style.SocialIcon}/></a></li>
-          <li><a href="https://www.instagram.com/debussy_art/" target='_blank' rel="noopener noreferrer" ><BsInstagram className={style.SocialIcon}/></a></li>
-          <li><a href="https://www.linkedin.com/in/amanda-debussy-58aa90140/" target='_blank' rel="noopener noreferrer" ><BsLinkedin className={style.SocialIcon}/></a></li>
-          <li><a href="https://github.com/MandyocaDebussy"  target='_blank' rel="noopener noreferrer" ><BsGithub className={style.SocialIcon}/></a></li>
-          </ul> 
+<footer className={style.footer}>
+      <div className={style.footercontent}>
+        <div className={style.footerleft}>
+          <p>Rua das Esperanças, 500 – Bairro Bela Vida, São Paulo – SP, CEP 04567-890</p>
+          <p>(11) 4000-1234 |</p>
+          <p>email: contato@vidaplus.com.br</p>
+          <p>VidaPlus – Compromisso com Qualidade e Segurança</p>
         </div>
-      </footer> */}
+        <div className={style.footerright}>
+          <img src={images.iconevidaplus} alt="Logo VidaPlus" className="logo" />
+          <h2 className={style.brand}>VidaPlus</h2>
+        </div>
+      </div>
+      <div className={style.footerbottom}>
+        <p>
+          © {currentYear} Hospital VidaPlus – Excelência em Saúde | Desenvolvido por Amanda Sant’Anna Debussy | Ru: 4443693
+        </p>
+      </div>
+    </footer>
     </div>
     )
 }

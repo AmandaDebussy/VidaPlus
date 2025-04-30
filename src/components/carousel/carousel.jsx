@@ -51,7 +51,7 @@ function UncontrolledExample() {
   <div>
         <Carousel
       className={`${style.CarouselStyle} ${style.carouselmobile}`}
-      controls={true}
+      controls={false}
       indicators={false}
     >
 

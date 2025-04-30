@@ -334,6 +334,7 @@
     .NavBar{
         
         position: fixed; 
+        text-align: center;
         display:inline-block;
         /* grid-auto-flow: row; */
         gap: 1em;
@@ -381,9 +382,9 @@
         
     }
  
-    ::-webkit-scrollbar{
+    /* ::-webkit-scrollbar{
         overflow: hidden;
-    }
+    } */
 
 }
 
