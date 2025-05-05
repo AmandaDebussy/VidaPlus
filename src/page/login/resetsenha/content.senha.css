@@ -1,0 +1,58 @@
+
+:root {
+    --bs-white: #FDFFFC;
+    --bs-blue: #3131ED;
+    --bs-bluevice: #00003D;
+    --bs-purewhite: #ffffff;
+    --bs-purple:#ADADFF;
+}
+
+
+
+
+
+
+.recuperar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background-color: var(--bs-light);
+  }
+  
+  .recuperar-card {
+    background-color: var(--bs-white);
+    border: 1px solid var(--bs-blue);
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    height: 350px;
+    box-shadow: 0 4px 6px #0000001a, 0 8px 0 var(--bs-blue);
+    margin: auto 0;
+
+
+
+  }
+
+  .form-control{
+    background-color: var(--bs-purple);
+  }
+  
+  .recuperar-card h2 {
+    color: var(--bs-blue);
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .recuperar-card .form-label {
+    color: var(--bs-blue);
+  }
+  
+  .recuperar-card .btn {
+    font-weight: bold;
+    margin-top: 30px;
+  }
+  

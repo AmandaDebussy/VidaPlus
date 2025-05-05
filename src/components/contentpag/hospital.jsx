@@ -152,7 +152,7 @@ function ContentPag(){
           <p>VidaPlus – Compromisso com Qualidade e Segurança</p>
         </div>
         <div className={style.footerright}>
-          <img src={images.iconevidaplus} alt="Logo VidaPlus" className="logo" />
+          <img src={images.iconevidaplus} alt="Logo VidaPlus" className={style.logo} />
           <h2 className={style.brand}>VidaPlus</h2>
         </div>
       </div>

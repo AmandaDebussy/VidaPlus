@@ -4,16 +4,16 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NavBar from './components/navbar/navbar.jsx';
 import ContentPag from './components/contentpag/hospital.jsx';
 import './App.css';
-// import Login from "./pages/Login.jsx";
-// import Dashboard from "./pages/Dashboard.jsx";
+
 
 const Hospital = React.lazy(()=> import('./components/contentpag/hospital.jsx'))
-const Estrutura = React.lazy(() => import('./page/estrutura.jsx'));
+const Estrutura = React.lazy(() => import('./page/estrutura/estrutura.jsx'));
 const Pacientes = React.lazy(()=> import('./page/pacientes.jsx'));
 const Qualidade = React.lazy(()=> import('./page/qualidade.jsx'));
 const Servicos = React.lazy(()=> import('./page/servicos.jsx'));
 const Login = React.lazy(()=> import('./page/login/login.jsx'));
 const Dashboard = React.lazy(()=> import('./page/dashboard/dashboard.jsx'));
+const RecuperarSenha = React.lazy(()=> import('./page/login/resetsenha/resecuperar-senha.jsx'));
 
 function App() {
   
@@ -50,6 +50,8 @@ function App() {
               <Route path="/servicos" element={<Servicos />} />
               <Route path="/login" element={<Login />} />
               <Route path="/dashboard" element={<Dashboard />} />
+              <Route path="/recuperar-senha" element={<RecuperarSenha />} />
+
 
           </Routes>
         </Suspense>

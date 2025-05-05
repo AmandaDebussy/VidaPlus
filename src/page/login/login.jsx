@@ -20,7 +20,7 @@ export default function Login() {
 
   return (
     <div className = "backgroundImage">
-    <div className="login-container d-flex justify-content-center align-items-center vh-100">
+    <div className="login-container d-flex justify-content-center align-items-center ContentSize">
       <div className="login-card p-5">
         <h2 className="text-center">Login</h2>
         <form onSubmit={handleLogin}>
