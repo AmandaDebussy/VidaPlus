@@ -83,6 +83,14 @@
 
 }
 
+.NavBarElement button{
+    bottom: 29.0px;
+    font-size: 15px;
+    margin :30px; 
+    background-color: transparent;
+    border: none;
+}
+
 .NavBarLinkUnderline {
     position: relative;
 }
@@ -340,7 +348,7 @@
         gap: 1em;
         top: 0;
         left: 0;
-        width: 100%;
+        width: 55%;/*mudei o tamanho do bloco do navbar ao clicar tipo como o do linkdlin*/
         height: 100vh; 
         background-color: var(--bs-blue);
         transform: translateX(-100%); 

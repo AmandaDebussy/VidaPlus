@@ -11,7 +11,7 @@ function ContentPag(){
 
   
     const currentYear = new Date().getFullYear();
-
+  
 
   //text edit in <span style={colortext}>
   // const colortext = {
@@ -33,8 +33,7 @@ function ContentPag(){
           <div>
           <div className={style.BackgroundConteiner}>
          <img src={images.BackgroundMedican} alt="medican"/>
-
-
+         <div className={style.BackgroundCover}></div>
       </div>
         <section>
         <div className={style.ContentSection}>

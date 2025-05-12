@@ -1,4 +1,4 @@
-import BackgroundMedican from './../assets/mainbackgroundmedican.png'
+import BackgroundMedican from './../assets/bannermedico.png'
 import BackgroundMachineMedican from './../assets/image 4.png'
 import backgroundMachineMedicanRom from './../assets/image 5.png'
 import backgroundWithHand from './../assets/image 6.png'
@@ -12,6 +12,7 @@ import medico3 from './../assets/medicos/medico3.png'
 import medico4 from './../assets/medicos/medico4.png'
 import medicosunidos from './../assets/medicosunidos.png'
 import iconevidaplus from './../assets/vidaplusiconeimage.png'
+
 
 
 const images = {

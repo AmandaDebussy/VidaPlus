@@ -21,6 +21,7 @@
 .BackgroundConteiner img{
     margin-top: 4em;
     width:100%;
+    
 }
 
   
@@ -46,10 +47,13 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 40px;
-    margin-left: 15em;/*isso aqui afeta o modo responsivo,alterar*/
+    /* margin-left: 15em;isso aqui afeta o modo responsivo,alterar */
     gap: 2rem;
     padding: 5rem;
     flex-wrap: wrap; 
+    margin-left: 10vw;
+   
+    
   }
   
 
@@ -59,13 +63,20 @@
     font-size: 2rem;
     margin-bottom: 1rem;
     font-weight: bolder;
+    
   }
   
   .ContentSection p {
     font-size: 1rem;
     max-width: 500px;
   }
+
   
+
+
+
+
+
   /* Imagem */
   .ContentSection img {
     max-width: 500px;
@@ -81,7 +92,7 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 40px;
-    margin-right: 15em;/*isso aqui afeta o modo responsivo,alterar*/
+    margin-right: 20vh;/*isso aqui afeta o modo responsivo,alterar*/
     gap: 2rem;
     /* padding: 5rem; */
     flex-wrap: wrap; 
@@ -138,6 +149,7 @@
   }
   
   .ContentImageIcones p {
+    
     font-size: 14px;
     line-height: 1.5;
     letter-spacing: 0.3px;
@@ -285,17 +297,95 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*mobile version*/
+
+
+
+@media only screen and (max-width: 600px) {
+  .BackgroundCover{
+    background: url(../../assets/bannermedico.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 20vh;
+
+  }
+
+.BackgroundConteiner img{
+  
+ display: none;
+  
+}
+
+
+
+
+
+
+  .ContentSection{
+    margin: 10px;
+
+  }
+
+  .ContentSection h1{
+    font-size: 25px;
+    /* white-space:normal; */
+   
+    
+
+  }
+
+  
+  .ContentSection p{
+    font-size: 15px;
+
+  }
+  
+  .ContentSection img{
+    width: 20em;
+  } 
+
+
+
+
+
+  .ContentSectionWithout{
+     margin: 20px;
+     padding: 30px;
+  }
+
+  .ContentSectionWithout h1 {
+    font-size: 25px;
+  }
+
+  .ContentSectionWithout p{
+    font-size: 15px;
+  }
+ 
+
+  .ContentImageIcones img{
+    height: 55px;
+    width: 55px;
+  }
+
+  .ContentImageIcones p{
+     font-size: 14px;
+  }
+
+
+  .contentImageMedicos img{
+    width: 100%; /*arrumar aqui o tamanho pra mobile*/
+}
+
+
+.footercontent{
+  
+  font-size: 14px;
+}
+
+
+
+
+
+
+}
