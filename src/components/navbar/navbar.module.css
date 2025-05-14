@@ -33,7 +33,7 @@
 
 
 .bgcolorNavBar{
-    background-color: var(--bs-blue)!important;
+    background-color: var(--bs-bluevice)!important;
     position:sticky;
     top: 0;
     z-index: 1000;
@@ -43,7 +43,7 @@
 }
 
 
-.ConteinerLineblock {
+/* .ConteinerLineblock {
     position: relative;
   }
   
@@ -55,7 +55,7 @@
     height: 70px;
     background-color: var(--bs-purewhite);
     transform: translateX(-50%);
-  }
+  } */
 
 
 /*arrumar o tamanho*/
@@ -214,10 +214,10 @@
 
 /*versao mobile que Deus sabe como ta sendo dificil*/
 
-@media (max-width: 1458px) and (min-width:991px) {
-    .ConteinerLineblock {
+@media (max-width: 1458px){
+    /* .ConteinerLineblock {
         position: relative;
-      }
+      } */
 
 
       .LogoPagNav{
@@ -226,7 +226,7 @@
         left:90px;
     }
       
-      .lineblock {
+      /* .lineblock {
         position: absolute;
         left: 25%;
         bottom: 20px;
@@ -235,7 +235,7 @@
         background-color: var(--bs-purewhite);
         transform: translateX(-50%);
       }
-      
+       */
     .NavBar{
         position:relative; 
         left: 7em;
@@ -245,30 +245,17 @@
 
 }
 
-@media (max-width: 991px) and (min-width: 768px) {
+@media (max-width: 938px){
     .LogoPagNav{
-        width: 120px;
+        width: 100px;
         position:fixed;
         left:60px;
-    }
-    
-    .ConteinerLineblock {
-      position: relative;
-    }
-  
-    .lineblock {
-      position: absolute;
-      left: 24%;         
-      bottom: 30px;     
-      width: 2px;
-      height: 50px;      
-      background-color: var(--bs-purewhite);
-      transform: translateX(-50%);
+        top: 20px;/*ajuste de tamanho do icone*/
     }
   
     .NavBarLink{
       position:relative;
-      left: 9em;
+      /* left: 0em; */
       font-size: 12px;
      
              
@@ -280,7 +267,6 @@
         border: none;
         cursor: pointer;
         position: relative;
-        top: 5px;
         right: 40px;
         font-size: 10px;
         background-color: transparent; 
@@ -294,13 +280,14 @@
 
   
 
-@media (max-width: 768px) {
+@media (max-width: 828px) {
     
     .LogoPagNav{
         width: 64px;
         margin: 10px;
         position:fixed;
         left: 10px;
+        top:10px !important; /*ajuste de tamanho do icone*/
     }
     
     
@@ -360,7 +347,10 @@
     .lineblock{
         display: none;
     }
-
+     
+    .NavBarLink{
+        font-size: 14px;
+    }
 
    
 

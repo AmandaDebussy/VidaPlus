@@ -119,56 +119,54 @@
   }
 
 
-  
 
-  .ContentImageIcones {
+
+
+
+  .ContentConheçaNossaEst {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 10vw;
+  }
+  
+  /* Bloco do título */
+  .ContentJuntoLine {
+    margin-bottom: 20px;
+  }
+  
+  .ContentJuntoLine h1 {
+    font-weight: bolder;
+    text-align: left;  /* Alinha à esquerda */
+    margin-left: 0;
+    margin-bottom: 5px;
+  }
+  
+  .underline {
+    background-color: var(--bs-blue);
+    width: 490px;
+    height: 5px;
+    margin-left: 0;
+  }
+  
+  /* Bloco de imagens centralizado */
+  .ImageGrid {
     display: flex;
-    justify-content: center;
-    gap: 14em;
-    padding: 7em;
-    text-align: center;
     flex-wrap: wrap;
-  }
-  
-  .ContentImageIcones > div {
-    max-width: 300px;
-  }
-  
-  .ContentImageIcones img {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 10px;
-  }
-  
-  .ContentImageIcones h3 {
-    font-size: 30px;
-    color:var(--bs-blue);
-    font-weight: bold;
-    margin-bottom: 10px;
-    
-  }
-  
-  .ContentImageIcones p {
-    
-    font-size: 14px;
-    line-height: 1.5;
-    letter-spacing: 0.3px;
-  }
-  
-
-
-  .ContentImageIcones img {
-    width: 100px; 
-    height: 100px;
+    justify-content: center;
+    gap: 20px;
+ 
   }
 
 
 
 
 
-  
 
-  
+
+
+
+
+
 
 
   .Agendamento {
@@ -177,25 +175,17 @@
     align-items: center;
     padding-top:60px;
     margin: 30px;/*coloquei uma margim aqui pra ver como se comportar*/
-    gap: 60px;
+    /* gap: 60px; */
     flex-wrap: wrap;
   }
 
-
-  
-
-  
-  .Texto h2 {
-    font-size: 24px;
-    font-weight:bolder;
-    margin-bottom: 10px;
-  }
   
   .Linha {
     width: 400px;
     height: 4px;
     background-color:var(--bs-blue); /* Azul vibrante */
     margin-bottom: 8vh;
+    display: none;
   }
   
   .Botao {
@@ -215,25 +205,13 @@
     background-color: #8c8cff;
   }
   
-  .CardMedico {
-    flex: 1;
-    max-width: 300px;
-  }
-  
-  .CardMedico img {
-    width: 100%;
-    max-width: 350px;
-    border-radius: 5px;
-  }
-  
-  .CardMedico p {
-    margin-top: 10px;
-  }
+
+
   
 
 
 .contentImageMedicos{
-  margin-top: 30vh;
+  margin-top: 20vh;
   text-align: center;
 }
 
@@ -241,6 +219,21 @@
 .contentImageMedicos img{
     width: 50%; /*arrumar aqui o tamanho pra mobile*/
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -301,17 +294,42 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*mobile version*/
 
 
 
 @media only screen and (max-width: 600px) {
   .BackgroundCover{
-    background: url(../../assets/bannermedico.png);
+    background: url(../../assets/estrutura/Group9.png);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 20vh;
+    height:20vh;
 
   }
 
@@ -350,15 +368,38 @@
   } 
 
 
-
-
-
   .ContentSectionWithout{
-     margin: 20px;
-     padding: 30px;
+    margin: 20px;
+    padding: 30px;
+ }
+
+
+
+
+
+
+
+  .ContentJuntoLine {
+    margin-bottom: 20px;
+  }
+  
+
+  .underline {
+    background-color: var(--bs-blue);
+    width: 430px;
+    height: 5px;
+    margin-left: 0;
   }
 
-  .ContentSectionWithout h1 {
+  .ContentJuntoLine h1 {
+    font-weight: bolder;
+    text-align: center;  /* Alinha à esquerda */
+    margin-bottom: 5px;
+    margin-left: 0 auto;
+  }
+
+
+  /* .ContentSectionWithout h1 {
     font-size: 25px;
   }
 
@@ -375,6 +416,17 @@
   .ContentImageIcones p{
      font-size: 14px;
   }
+ */
+
+
+ .Linha {
+  width: 400px;
+  height: 4px;
+  background-color:var(--bs-blue); /* Azul vibrante */
+  margin-bottom: 8vh;
+  display: block;
+}
+
 
 
   .contentImageMedicos img{

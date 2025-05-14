@@ -12,8 +12,14 @@ import medico3 from './../assets/medicos/medico3.png'
 import medico4 from './../assets/medicos/medico4.png'
 import medicosunidos from './../assets/medicosunidos.png'
 import iconevidaplus from './../assets/vidaplusiconeimage.png'
-
-
+import backgroundEstruture from './../assets/estrutura/Group9.png'
+import medicotablethand from './../assets/estrutura/image.png'
+import medicoseedisplay from './../assets/estrutura/image2.png'
+import medicoluvaazul from './../assets/estrutura/image3.png'
+import salamedicomacajanela from './../assets/estrutura/image4.png'
+import estrutura from './../assets/estrutura/image 9.png'
+import estrutura2 from './../assets/estrutura/image 10.png'
+import estrutura3 from './../assets/estrutura/image11.png'
 
 const images = {
     BackgroundMedican,
@@ -29,7 +35,16 @@ const images = {
     medico3,
     medico4,
     medicosunidos,
-    iconevidaplus
+    iconevidaplus,
+    backgroundEstruture,
+    medicotablethand,
+    medicoseedisplay,
+    medicoluvaazul,
+    salamedicomacajanela,
+    estrutura,
+    estrutura2,
+    estrutura3
+
 
 }
 

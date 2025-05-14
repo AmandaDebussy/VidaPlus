@@ -8,9 +8,9 @@ import './App.css';
 
 const Hospital = React.lazy(()=> import('./components/contentpag/hospital.jsx'))
 const Estrutura = React.lazy(() => import('./page/estrutura/estrutura.jsx'));
-const Pacientes = React.lazy(()=> import('./page/pacientes.jsx'));
-const Qualidade = React.lazy(()=> import('./page/qualidade.jsx'));
-const Servicos = React.lazy(()=> import('./page/servicos.jsx'));
+const Pacientes = React.lazy(()=> import('./page/pacientes/pacientes.jsx'));
+const Qualidade = React.lazy(()=> import('./page/qualidade/qualidade.jsx'));
+const Servicos = React.lazy(()=> import('./page/servicos/servicos.jsx'));
 const Login = React.lazy(()=> import('./page/login/login.jsx'));
 const Dashboard = React.lazy(()=> import('./page/dashboard/dashboard.jsx'));
 const RecuperarSenha = React.lazy(()=> import('./page/login/resetsenha/resecuperar-senha.jsx'));
