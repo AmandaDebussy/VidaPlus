@@ -19,7 +19,7 @@
 
 
 .BackgroundConteiner img{
-    margin-top: 4em;
+    /* margin-top: 4em; */
     width:100%;
     
 }
@@ -137,7 +137,7 @@
   .ContentJuntoLine h1 {
     font-weight: bolder;
     text-align: left;  /* Alinha à esquerda */
-    margin-left: 0;
+    margin-left: 12px;
     margin-bottom: 5px;
   }
   
@@ -145,7 +145,7 @@
     background-color: var(--bs-blue);
     width: 490px;
     height: 5px;
-    margin-left: 0;
+    margin-left: 12px;
   }
   
   /* Bloco de imagens centralizado */
@@ -154,10 +154,14 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+   
  
   }
 
 
+  .ImageGrid img{
+    border-radius: 5px;
+  }
 
 
 

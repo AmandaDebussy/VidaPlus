@@ -70,7 +70,7 @@ function NavBar({ toggleDarkMode, darkMode }) {
                                 <Link to="/Estrutura" className={classNames(style.NavBarLink, style.NavBarLinkUnderline)}>Estrutura</Link>
                             </li>
                             <li className={style.NavBarElement}>
-                                <Link to="/Serviços" className={classNames(style.NavBarLink, style.NavBarLinkUnderline)}>Serviços</Link>
+                                <Link to="/Servicos" className={classNames(style.NavBarLink, style.NavBarLinkUnderline)}>Serviços</Link>
                             </li>
                             <li className={style.NavBarElement}>
                                 <Link to="/Qualidade" className={classNames(style.NavBarLink, style.NavBarLinkUnderline)}>Qualidade</Link>

@@ -20,6 +20,11 @@ import salamedicomacajanela from './../assets/estrutura/image4.png'
 import estrutura from './../assets/estrutura/image 9.png'
 import estrutura2 from './../assets/estrutura/image 10.png'
 import estrutura3 from './../assets/estrutura/image11.png'
+import backgroundMedicoComPaciente from './../assets/servicos/Group10.png'
+import imageicone1 from './../assets/servicos/imageicone.png'
+import imageicone2 from './../assets/servicos/imageicone1.png'
+import imageicone3 from './../assets/servicos/content2.png'
+import imageicone4 from './../assets/servicos/content4.png'
 
 const images = {
     BackgroundMedican,
@@ -43,7 +48,13 @@ const images = {
     salamedicomacajanela,
     estrutura,
     estrutura2,
-    estrutura3
+    estrutura3,
+    backgroundMedicoComPaciente,
+    imageicone1,
+    imageicone2,
+    imageicone3,
+    imageicone4
+
 
 
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import images from '../../components/image'
 import style from './content.module.css';
+// import { height } from '@fortawesome/free-solid-svg-icons/fa0';
 // import { BsFacebook, BsGithub, BsLinkedin, BsInstagram } from "react-icons/bs";
 
 
@@ -10,7 +11,11 @@ function ContentPag(){
 
   
     const currentYear = new Date().getFullYear();
-  
+    const StyleSolo = {
+      borderRadius: '10px',
+     
+      
+    }
 
   //text edit in <span style={colortext}>
   // const colortext = {
@@ -128,9 +133,9 @@ function ContentPag(){
         </div>
 
         <div className={style.ImageGrid}>
-           <img src={images.estrutura} alt="" />
-           <img src={images.estrutura2} alt="" />
-           <img src={images.estrutura3} alt="" />
+           <img src={images.estrutura} alt="informacaodaunidade" />
+           <img src={images.estrutura2} style={StyleSolo} alt="informacaodaunidade"/>
+           <img src={images.estrutura3}  aalt="informacaodaunidade"/>
         </div>
     </div>
 </section>
