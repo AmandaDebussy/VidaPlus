@@ -113,13 +113,14 @@
 
   .ContentSection h1 {
     font-size: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     font-weight: bolder;
     
   }
   
   .ContentSection p {
     font-size: 1rem;
+    margin-top: 0.5rem;
     max-width: 500px;
   }
 
@@ -127,34 +128,31 @@
 
   /* Imagem */
   .ContentSection img {
-    max-width: 500px;
+    max-width:45em;
     width: 100%;
+    
     height: auto;
     object-fit: cover;
     margin-right: 10em;/*isso aqui afeta o modo responsivo,alterar*/
   }
 
-  
 
 
 
 
 
-  /* Imagem */
-  .ContentSection img {
-    max-width: 500px;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    margin-right: 10em;/*isso aqui afeta o modo responsivo,alterar*/
-  }
+
+
+
+
+
 
 
   .ContentSectionWithout {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 10em;
     margin-right: 20vh;/*isso aqui afeta o modo responsivo,alterar*/
     gap: 2rem;
     /* padding: 5rem; */
@@ -249,6 +247,36 @@
   }
 
 
+/*medicos juntos*/
+
+ /* .ContentSection img {
+    max-width: 700px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-right: 10em;
+  } */
+
+
+.underlineother {
+    background-color: var(--bs-blue);
+    width: 430px;
+    height: 5px;
+    margin-left: 0;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  
 
 
 

@@ -76,16 +76,34 @@ function ContentPag(){
            </div>
     </div>
 </section>
-
 <section>
-        <div className={style.ContentSection}>
+<div className={style.ContentSectionWithout}>
+        <img src={images.roommedico2} alt="machinemedican" />
           <div>
+            
             <div className={style.TitleRow}>
             <span className={style.BlockLine}></span>
                <h1>
-               Cirurgias de Alta Complexidade <br/>
-               com Cuidado e Inovação
+               Tratamento Integrado da Obesidade<br/>
+com Cuidado e Especialização         
                </h1>
+           </div>
+       <p>
+      No VidaPlus, oferecemos um serviço completo para o tratamento da obesidade grave (grau 3), com acompanhamento humanizado e estrutura preparada para cada etapa do processo.
+Nossa equipe multidisciplinar é formada por profissionais de diversas áreas, incluindo cirurgia, enfermagem, anestesiologia, nutrição, psicologia e fisioterapia. Todos atuam de forma integrada para garantir segurança, acolhimento e resultado desde o pré-operatório até o pós-cirúrgico.
+Tudo em um só lugar: consultas, exames, cirurgias e acompanhamento contínuo. Mais segurança, mais conforto e um cuidado que vai além do procedimento.
+       </p>
+         </div>
+  </div>
+</section>
+<section>
+        <div className={style.ContentSection}>
+          <div>
+            <span className={style.BlockLine}></span>
+               <h1>
+               Faça um Agendamento
+               </h1>
+               <div className={style.underlineother}>
            </div>
        <p>
        Oferecemos toda a infraestrutura necessária para realizar 
@@ -97,62 +115,12 @@ function ContentPag(){
           com o cuidado e a humanização que você merece.
        </p>
          </div>
-    <img src={images.medicoluvaazul} alt="machinemedican" />
+    <img src={images.EquipeMedica} alt="machinemedican" />
   </div>
-</section>
-<section>
-<div className={style.ContentSectionWithout}>
-        <img src={images.salamedicomacajanela} alt="machinemedican" />
-          <div>
-            
-            <div className={style.TitleRow}>
-            <span className={style.BlockLine}></span>
-               <h1>
-               Conforto e Tecnologia <br/>
-               para a Melhor Recuperação         
-               </h1>
-           </div>
-       <p>
-       Oferecemos uma infraestrutura moderna e acolhedora, garantindo 
-       conforto e bem-estar durante a internação. Nossos quartos são amplos,
-        equipados com tecnologia de ponta e pensados para proporcionar a melhor 
-        experiência tanto para o paciente quanto para seu acompanhante. Aqui, cada detalhe é
-        pensado para unir segurança, privacidade e um atendimento humanizado.
-       </p>
-         </div>
-  </div>
-</section>
-<section>
-    <div className={style.ContentConheçaNossaEst}>
-        <div className={style.ContentJuntoLine}>
-        <h1>Conheça Nossa Estrutura </h1>
-        <div className={style.underline}></div>
-        </div>
-
-        <div className={style.ImageGrid}>
-           <img src={images.estrutura} alt="iinformacaodeprocedimento" />
-           <img src={images.estrutura2} style={StyleSolo} alt="iinformacaodeprocedimento"/>
-           <img src={images.estrutura3}  aalt="iinformacaodeprocedimento"/>
-        </div>
-    </div>
-</section>
-
-
-
-
-
-
-
-
-
-<section className={style.Agendamento}>
-  <div className={style.Texto}>
-
     <div className={style.Linha}></div>
     <button className={style.Botao}>
       Marque uma Consulta <img src={images.whatsappicon} alt="Whatsapp contato" /> 
     </button>
-  </div>
 </section>
 <section>
   <div className={style.contentImageMedicos}>

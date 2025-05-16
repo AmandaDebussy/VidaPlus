@@ -25,6 +25,8 @@ import imageicone1 from './../assets/servicos/imageicone.png'
 import imageicone2 from './../assets/servicos/imageicone1.png'
 import imageicone3 from './../assets/servicos/content2.png'
 import imageicone4 from './../assets/servicos/content4.png'
+import EquipeMedica from './../assets/servicos/image15.png'
+import roommedico2 from './../assets/servicos/image16.png'
 
 const images = {
     BackgroundMedican,
@@ -53,7 +55,9 @@ const images = {
     imageicone1,
     imageicone2,
     imageicone3,
-    imageicone4
+    imageicone4,
+    EquipeMedica,
+    roommedico2
 
 
 
