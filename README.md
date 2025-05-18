@@ -26,7 +26,9 @@ O objetivo é criar uma identidade digital para um hospital que preza tanto pela
 - [React](https://reactjs.org/)
 - [Vite](https://vitejs.dev/)
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-- [CSS Modules / Tailwind / styled-components] *(me avisa qual tá usando que eu coloco certo!)*
+- CSS Modules para estilos modularizados e scoped
+- Bootstrap (opcional) para componentes responsivos
+- Técnicas de design responsivo para adaptar layouts a diferentes dispositivos 
 
 ---
 
