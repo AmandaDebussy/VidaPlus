@@ -57,8 +57,8 @@ export default function Dashboard() {
        <br />
         <button type="submit">Cadastrar</button>
       </form>
-
-      <h3>Lista de Pacientes</h3>
+<br />
+      <h3>Lista do Paciente</h3>
       <ul type="none">
         {pacientes.map((p, i) => (
           <li key={i}>{p.nome} - {p.cpf} - {p.service} - {p.data} -{p.horario}

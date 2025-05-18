@@ -7,63 +7,95 @@
 }
 
 
-.ContentCadastro{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 80vh;
-    background-color: var(--bs-light);
-    
+.ContentCadastro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  background-color: var(--bs-light);
+  padding: 1rem; /* para não colar nas bordas em telas pequenas */
+  box-sizing: border-box;
 }
 
-.ContentCard{
-    background-color: var(--bs-white);
-    border: 1px solid var(--bs-blue);
-    padding: 4.5em;
-    border-radius: 15px;
-    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
-    max-width: 1000px;
+.ContentCard {
+  background-color: var(--bs-white);
+  border: 1px solid var(--bs-blue);
+  padding: 4.5em;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px #0000001a, 0 8px 0 var(--bs-blue);
+  margin: auto 0;
+  color: var(--bs-blue);
+  box-sizing: border-box;
+}
+
+/* Títulos */
+.ContentCard h2 {
+  font-weight: bolder;
+  font-size: 40px;
+  /* padding: 20px; */
+}
+
+/* Inputs e selects */
+.ContentCard input,
+.ContentCard select {
+  background-color: var(--bs-purple);
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin: 10px;
+  border: none;
+  box-sizing: border-box;
+}
+
+/* Botão */
+.ContentCard button {
+  background-color: var(--bs-blue);
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 20px;
+  width: 250px;
+  border: none;
+  color: var(--bs-white);
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.ContentCard button:hover {
+  background-color: #004a99;
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .ContentCard {
+    padding: 2rem 2rem;
+    min-height: auto;
+  }
+
+  .ContentCard h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .ContentCard input,
+  .ContentCard select {
+    width: 100%; /* full width em telas pequenas */
+    max-width: 100%;
+    margin: 8px 0;
+  }
+
+  .ContentCard button {
     width: 100%;
-    min-height: 500px;
-    box-shadow: 0 4px 6px #0000001a, 0 8px 0 var(--bs-blue);
-    margin: auto 0;
-    color: var(--bs-blue);
+    font-size: 18px;
     
-}
+  }
 
-.ContentCard h2{
-    font-weight: bolder;
-    font-size: 40px;
-    /* padding: 20px; */
-}
-
-.ContentCard input{
-    background-color: var(--bs-purple);
-    padding: 5px;
-    border-radius: 10px;
-    margin: 10px;
-    border: none;
-    
-}
-
-.ContentCard select{
-    background-color: var(--bs-purple);
-    padding: 8px;
-    border-radius: 10px;
-    margin: 10px;
-    border: none;
-    
-}
-
-.ContentCard button{
-    background-color: var(--bs-blue);
-    padding: 10px;
-    border-radius: 10px;
-    margin-top: 20px;
-    width: 250px;
-    border: none;
-    color: var(--bs-white);
+  ul{
+    padding: 20px;
     font-weight: bold;
-    font-size: 20px;
-
+  }
 }

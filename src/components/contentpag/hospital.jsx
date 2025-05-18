@@ -2,6 +2,7 @@ import React from 'react';
 import images from './../image'
 import style from './content.module.css';
 import UncontrolledExample from '../carousel/carousel';
+import { useNavigate } from 'react-router-dom';
 // import { BsFacebook, BsGithub, BsLinkedin, BsInstagram } from "react-icons/bs";
 
 
@@ -11,6 +12,11 @@ function ContentPag(){
 
   
     const currentYear = new Date().getFullYear();
+      const navigate = useNavigate();
+      
+        const handleClick = () => {
+          navigate('/login');
+        };
   
 
   //text edit in <span style={colortext}>
@@ -128,8 +134,8 @@ function ContentPag(){
       especialistas da área
     </h2>
     <div className={style.Linha}></div>
-    <button className={style.Botao}>
-      Marque uma Consulta <img src={images.whatsappicon} alt="Whatsapp contato" /> 
+    <button className={style.Botao} onClick={handleClick}>
+      Marque uma Consulta 
     </button>
   </div>
 

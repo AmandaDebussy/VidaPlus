@@ -1,6 +1,7 @@
 import React from 'react';
 import images from '../../components/image'
 import style from './content.module.css';
+import { useNavigate } from 'react-router-dom';
 // import { height } from '@fortawesome/free-solid-svg-icons/fa0';
 // import { BsFacebook, BsGithub, BsLinkedin, BsInstagram } from "react-icons/bs";
 
@@ -9,13 +10,19 @@ import style from './content.module.css';
 
 function ContentPag(){
 
-  
+
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate('/login');
+  };
+
     const currentYear = new Date().getFullYear();
-    const StyleSolo = {
-      borderRadius: '10px',
+    // const StyleSolo = {
+    //   borderRadius: '10px',
      
       
-    }
+    // }
 
   //text edit in <span style={colortext}>
   // const colortext = {
@@ -47,10 +54,10 @@ function ContentPag(){
             <h1>Cuidar da Saúde é Viver Bem </h1>
             <span className={style.BlockLineTitle}></span>
            </div>
-           Aqui, unimos tecnologia e atendimento humanizado para oferecer o melhor em <strong>consultas, exames, procedimentos, cirurgias e internação</strong>.
+          <p> Aqui, unimos tecnologia e atendimento humanizado para oferecer o melhor em <strong>consultas, exames, procedimentos, cirurgias e internação</strong>.
       Nossa estrutura foi pensada para garantir conforto, segurança e qualidade em cada etapa do seu cuidado.
       
-      Conheça tudo o que preparamos para a sua saúde com um <strong>Plus!</strong>
+      Conheça tudo o que preparamos para a sua saúde com um <strong>Plus!</strong></p>
          </div>
   </div>
 </section>
@@ -59,14 +66,13 @@ function ContentPag(){
     <div className={style.ContentConheçaNossaEst}>
         <div className={style.ContentJuntoLine}>
         <h1>Nossos Especialistas Cuidam da Sua Saúde com Atenção e Empatia. Agende sua Consulta.</h1>
-        <div className={style.underline}></div>
         </div>
          <p>Estamos prontos para ouvir sua história e realizar um check-up completo da sua saúde.
              Com consultas ambulatoriais nas mais diversas especialidades, garantimos
              um atendimento personalizado e de qualidade para cuidar de você em cada detalhe.</p>
         <div className={style.ImageGrid}>
            <img src={images.imageicone1} alt="informacaodeprocedimento" />
-           <img src={images.imageicone2} style={StyleSolo} alt="iinformacaodeprocedimento"/>
+           <img src={images.imageicone2}  alt="iinformacaodeprocedimento"/>
            </div>
             <div className={style.textImage} >
             <p>E consultas de <strong>pré-cirurgia:</strong></p>
@@ -80,7 +86,6 @@ function ContentPag(){
 <div className={style.ContentSectionWithout}>
         <img src={images.roommedico2} alt="machinemedican" />
           <div>
-            
             <div className={style.TitleRow}>
             <span className={style.BlockLine}></span>
                <h1>
@@ -96,37 +101,53 @@ Tudo em um só lugar: consultas, exames, cirurgias e acompanhamento contínuo. M
          </div>
   </div>
 </section>
+
+
+
 <section>
         <div className={style.ContentSection}>
           <div>
-            <span className={style.BlockLine}></span>
                <h1>
                Faça um Agendamento
                </h1>
                <div className={style.underlineother}>
            </div>
        <p>
-       Oferecemos toda a infraestrutura necessária para realizar 
-       cirurgias de alta complexidade. Nossos centros de Hemodinâmica,
-        Diagnóstico por Imagem e Cirurgia são equipados com tecnologia 
-        avançada, como <strong>telas touch, focos de LED, sistema integrado de 
-        imagens de alta resolução e videolaparoscopia com fluorescência,
-         garantindo precisão e segurança em cada procedimento.</strong> Tudo isso
-          com o cuidado e a humanização que você merece.
+     Nossa estrutura é preparada para realizar cirurgias de alta complexidade
+com segurança e eficiência. Contamos com profissionais experientes em diversas especialidades:
+<ul>
+<li>Dr. Rafael Mendonça – Cirurgião Geral, especialista em técnicas minimamente invasivas</li>
+<li>Dra. Camila Duarte – Cirurgiã Vascular, focada em procedimentos de alta precisão</li>
+<li>Dr. Gustavo Leal – Cirurgião Ortopedista, especialista em reconstrução e trauma</li>
+<li>Dra. Renata Campos – Cirurgiã Plástica, com experiência em cirurgias reparadoras e estéticas</li>
+</ul>
+Equipe preparada, estrutura completa e compromisso com o cuidado.
        </p>
+       <button className={style.Botao} onClick={handleClick}>
+     Marque uma Consulta 
+    </button>
          </div>
     <img src={images.EquipeMedica} alt="machinemedican" />
-  </div>
-    <div className={style.Linha}></div>
-    <button className={style.Botao}>
-      Marque uma Consulta <img src={images.whatsappicon} alt="Whatsapp contato" /> 
-    </button>
+  </div> 
 </section>
+
+
+
+
+
+
+
 <section>
   <div className={style.contentImageMedicos}>
   <img src={images.medicosunidos} alt="medicosjuntos" />
   </div>
 </section>
+
+
+
+
+
+
 <footer className={style.footer}>
       <div className={style.footercontent}>
         <div className={style.footerleft}>

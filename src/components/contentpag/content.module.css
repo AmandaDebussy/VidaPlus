@@ -312,6 +312,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: 20vh;
+    max-height: 150px;
 
   }
 
@@ -322,50 +323,46 @@
 }
 
 
-
-
-
-
-  .ContentSection{
+   .ContentSection {
     margin: 10px;
-
+    padding: 10px;
+     padding-top: 5em;
   }
 
-  .ContentSection h1{
+  .ContentSection h1 {
     font-size: 25px;
-    /* white-space:normal; */
-   
-    
-
   }
 
-  
-  .ContentSection p{
+  .ContentSection p {
     font-size: 15px;
-
   }
-  
-  .ContentSection img{
-    width: 20em;
-  } 
 
+  .ContentSection img {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: block;
+  }
 
-
-
-
-  .ContentSectionWithout{
-     margin: 20px;
-     padding: 30px;
+  .ContentSectionWithout {
+    margin: 10px;
+    padding: 10px;
+     padding-top: 5em;
   }
 
   .ContentSectionWithout h1 {
     font-size: 25px;
   }
 
-  .ContentSectionWithout p{
+  .ContentSectionWithout p {
     font-size: 15px;
   }
- 
+
+  .ContentImageIcones img {
+    height: 55px;
+    width: 55px;
+  }
+
 
   .ContentImageIcones img{
     height: 55px;
@@ -374,6 +371,24 @@
 
   .ContentImageIcones p{
      font-size: 14px;
+  }
+
+
+
+
+
+
+
+
+  .Agendamento button{
+    
+    width: 100%;
+
+  }
+
+  .Linha{
+    width: 100%;
+    max-width: 350px;
   }
 
 

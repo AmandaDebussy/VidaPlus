@@ -1,6 +1,7 @@
 import React from 'react';
 import images from '../../components/image'
 import style from './content.module.css';
+import { useNavigate } from 'react-router-dom';
 // import { height } from '@fortawesome/free-solid-svg-icons/fa0';
 // import { BsFacebook, BsGithub, BsLinkedin, BsInstagram } from "react-icons/bs";
 
@@ -9,7 +10,13 @@ import style from './content.module.css';
 
 function ContentPag(){
 
+
+    
+  const navigate = useNavigate();
   
+    const handleClick = () => {
+      navigate('/login');
+    };
     const currentYear = new Date().getFullYear();
     const StyleSolo = {
       borderRadius: '10px',
@@ -149,13 +156,10 @@ function ContentPag(){
 
 
 <section className={style.Agendamento}>
-  <div className={style.Texto}>
-
     <div className={style.Linha}></div>
-    <button className={style.Botao}>
-      Marque uma Consulta <img src={images.whatsappicon} alt="Whatsapp contato" /> 
-    </button>
-  </div>
+  <button className={style.Botao} onClick={handleClick}>
+      Marque uma Consulta 
+     </button>
 </section>
 <section>
   <div className={style.contentImageMedicos}>

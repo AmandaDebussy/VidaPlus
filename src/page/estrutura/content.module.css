@@ -1,6 +1,9 @@
 /* *{
     font-family: Arial, Helvetica, sans-serif;
 } */
+ * {
+  box-sizing: border-box;
+}
 
 :root {
     --bs-white: #FDFFFC;
@@ -334,6 +337,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     height:20vh;
+    max-height: 150px;
 
   }
 
@@ -350,6 +354,7 @@
 
   .ContentSection{
     margin: 10px;
+    padding: 30px;
 
   }
 
@@ -367,15 +372,23 @@
 
   }
   
-  .ContentSection img{
-    width: 20em;
-  } 
+ .ContentSection img {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  display: block;
+}
 
 
-  .ContentSectionWithout{
-    margin: 20px;
-    padding: 30px;
- }
+
+.ContentSectionWithout {
+  margin: 20px;
+  padding: 10px;
+}
+
+.ContentSectionWithout h1{
+  font-size: 25px;
+}
 
 
 
@@ -386,50 +399,33 @@
   .ContentJuntoLine {
     margin-bottom: 20px;
   }
+
+  .Agendamento button{
+    
+    width: 100%;
+    max-width: 260px;
+
+  }
   
-
-  .underline {
-    background-color: var(--bs-blue);
-    width: 430px;
-    height: 5px;
-    margin-left: 0;
-  }
-
-  .ContentJuntoLine h1 {
-    font-weight: bolder;
-    text-align: center;  /* Alinha à esquerda */
-    margin-bottom: 5px;
-    margin-left: 0 auto;
-  }
-
-
-  /* .ContentSectionWithout h1 {
-    font-size: 25px;
-  }
-
-  .ContentSectionWithout p{
-    font-size: 15px;
-  }
- 
-
-  .ContentImageIcones img{
-    height: 55px;
-    width: 55px;
-  }
-
-  .ContentImageIcones p{
-     font-size: 14px;
-  }
- */
-
-
- .Linha {
-  width: 400px;
+.underline,
+.Linha {
+  width: 100%;
+  max-width: 300px;
   height: 4px;
-  background-color:var(--bs-blue); /* Azul vibrante */
-  margin-bottom: 8vh;
+  background-color: var(--bs-blue);
+  margin-left: auto;
+  margin-right: auto;
   display: block;
 }
+
+.ContentJuntoLine h1 {
+  font-weight: bolder;
+  text-align: center;
+  margin-bottom: 5px;
+  margin: 0 auto;
+}
+
+
 
 
 

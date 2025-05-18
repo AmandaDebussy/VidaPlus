@@ -27,6 +27,21 @@ import imageicone3 from './../assets/servicos/content2.png'
 import imageicone4 from './../assets/servicos/content4.png'
 import EquipeMedica from './../assets/servicos/image15.png'
 import roommedico2 from './../assets/servicos/image16.png'
+import backgroundmedicoapertandomao from './../assets/qualidade/Group11.png'
+import medicocomestrela from './../assets/qualidade/imageestrelaqualidade.png'
+import medicoscompacientes from './../assets/qualidade/imagemedicoconversando.png'
+import  cardQualidade1 from './../assets/qualidade/maozinha.png'
+import  cardQualidade2 from './../assets/qualidade/humano.png'
+import  cqh from './../assets/qualidade/cqh.png'
+import backgroundMedicoPaciente from './../assets/pacientes/Group12.png'
+import MedicoConversandoPaciente from './../assets/pacientes/imagemedicoconversandopaciete.png'
+import medicoCoracao from './../assets/pacientes/medicocoracao.png'
+import comentario from './../assets/pacientes/ChatLeftQuoteFill.png'
+import paciente1 from './../assets/pacientes/paciente1.png'
+import paciente2 from './../assets/pacientes/paciente2.png'
+import paciente3 from './../assets/pacientes/paciente3.png'
+import paciente4 from './../assets/pacientes/paciente4.png'
+
 
 const images = {
     BackgroundMedican,
@@ -57,7 +72,22 @@ const images = {
     imageicone3,
     imageicone4,
     EquipeMedica,
-    roommedico2
+    roommedico2,
+    backgroundmedicoapertandomao,
+    medicocomestrela,
+    medicoscompacientes,
+    cardQualidade1,
+    cardQualidade2,
+    cqh,
+    backgroundMedicoPaciente,
+    MedicoConversandoPaciente,
+    medicoCoracao,
+    paciente1,
+    paciente2,
+    paciente3,
+    paciente4,
+    comentario
+    
 
 
 
