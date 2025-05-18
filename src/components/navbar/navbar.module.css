@@ -335,7 +335,7 @@
         gap: 1em;
         top: 0;
         left: 0;
-        width: 55%;/*mudei o tamanho do bloco do navbar ao clicar tipo como o do linkdlin*/
+        width: 60%;/*mudei o tamanho do bloco do navbar ao clicar tipo como o do linkdlin*/
         height: 100vh; 
         background-color: var(--bs-blue);
         transform: translateX(-100%); 
@@ -371,7 +371,8 @@
         margin: 10px auto;
         padding-top: 2em;
         height: 3px;
-        width: 200px; /* Define uma largura pra centralizar */
+        width: 100px; /* Define uma largura pra centralizar */
+        max-width: 100px;
     }
 
 
@@ -380,9 +381,15 @@
         
     }
  
-    /* ::-webkit-scrollbar{
-        overflow: hidden;
-    } */
+
+    /*button elemento*/
+  .NavBarElement button{
+    font-size: 13px;
+    margin-left: 1px;
+    padding-top: 2ch;
+    font-weight: bold;
+
+  }
 
 }
 
