@@ -17,7 +17,7 @@ O objetivo é criar uma identidade digital para um hospital que preza tanto pela
 - Design responsivo para desktop e mobile
 - Interface inspirada em hospitais modernos e minimalistas
 
-> 🚫 *O projeto ainda **não possui backend** nem funcionalidades como agendamento ou login.*
+> 🚫 *O projeto ainda **não possui backend** ainda*
 
 ---
 
