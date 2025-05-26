@@ -3,6 +3,9 @@ import { useState } from "react";
 import './contet.dashboard.css'
 import images from "../../components/image";
 import '../login/footerstyle.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser, faIdCard, faStethoscope, faCalendarAlt, faClock } from '@fortawesome/free-solid-svg-icons';
+
 
 export default function Dashboard() {
   const [pacientes, setPacientes] = useState([]);
@@ -61,9 +64,16 @@ export default function Dashboard() {
       <h3>Lista do Paciente</h3>
       <ul type="none">
         {pacientes.map((p, i) => (
-          <li key={i}>{p.nome} - {p.cpf} - {p.service} - {p.data} -{p.horario}
-          </li>
-        ))}
+  <li key={i} className="paciente-info">
+     <p><FontAwesomeIcon icon={faUser} /> <strong>Nome:</strong> {p.nome}</p>
+  <p><FontAwesomeIcon icon={faIdCard} /> <strong>CPF:</strong> {p.cpf}</p>
+  <p><FontAwesomeIcon icon={faStethoscope} /> <strong>Serviço:</strong> {p.service}</p>
+  <p><FontAwesomeIcon icon={faCalendarAlt} /> <strong>Data:</strong> {p.data}</p>
+  <p><FontAwesomeIcon icon={faClock} /> <strong>Horário:</strong> {p.horario}</p>
+  <br />
+  <p><strong>⚠️ Favor chegar no horario marcado!</strong></p>
+  </li>
+))}
       </ul>
       </div>
     </div>
