@@ -564,7 +564,9 @@ display: block;
 
 
 
-
+  .contentImageMedicos img{
+    width: 100%; /*arrumar aqui o tamanho pra mobile*/
+}
 
 
 
