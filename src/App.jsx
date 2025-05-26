@@ -2,7 +2,7 @@ import React, { useState, useEffect} from 'react';
 import { Suspense } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NavBar from './components/navbar/navbar.jsx';
-import ContentPag from './components/contentpag/hospital.jsx';
+import VidaPlus from './components/contentpag/hospital.jsx';
 import './App.css';
 
 
@@ -42,7 +42,7 @@ function App() {
         <main>
         <Suspense fallback={<div>Aguarde...</div>}>
           <Routes>
-          <Route path="/" element={<ContentPag />} />
+          <Route path="/" element={<VidaPlus />} />{/*minha pagina principal com o hospital*/}
               <Route path="/hospital" element={<Hospital />} />
               <Route path="/estrutura" element={<Estrutura />} />
               <Route path="/pacientes" element={<Pacientes />} />
