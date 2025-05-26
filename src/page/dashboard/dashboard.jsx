@@ -37,7 +37,7 @@ export default function Dashboard() {
         <input value={nome} onChange={e => setNome(e.target.value)} placeholder="Nome" required />
         <label className="form-label text-primary">Cpf</label>
         <input value={cpf} onChange={e => setCpf(e.target.value)} placeholder="CPF" required />
-        
+        <label ></label>
         <select
           value={service}
           onChange={e => setService(e.target.value)}

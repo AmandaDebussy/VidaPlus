@@ -8,11 +8,10 @@
 
 
 .ContentCadastro {
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   align-items: center;
   min-height: 80vh;
-  background-color: var(--bs-light);
   padding: 1rem; /* para não colar nas bordas em telas pequenas */
   box-sizing: border-box;
 }
