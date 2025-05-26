@@ -8,7 +8,7 @@
 
 
 .ContentCadastro {
-  /* display: flex; */
+  display:flex;
   justify-content: center;
   align-items: center;
   min-height: 80vh;
@@ -70,6 +70,17 @@
 
 
 @media (max-width: 768px) {
+.ContentCadastro {
+  display:block;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 1rem; /* para não colar nas bordas em telas pequenas */
+  box-sizing: border-box;
+}
+
+
+
   .ContentCard {
     padding: 2rem 2rem;
     min-height: auto;
