@@ -64,7 +64,7 @@ function NavBar({ toggleDarkMode, darkMode }) {
 
                         <ul className={classNames(style.NavBar, { [style.show]: isOpen })}>
                             <li className={style.NavBarElement}>
-                                <Link to="/hospital" className={classNames(style.NavBarLink, style.NavBarLinkUnderline)}>Hospital</Link>
+                                <Link to="/Hospital" className={classNames(style.NavBarLink, style.NavBarLinkUnderline)}>Hospital</Link>
                             </li>
                             <li className={style.NavBarElement}>
                                 <Link to="/Estrutura" className={classNames(style.NavBarLink, style.NavBarLinkUnderline)}>Estrutura</Link>
