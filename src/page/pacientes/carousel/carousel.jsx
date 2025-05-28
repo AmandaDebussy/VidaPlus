@@ -17,7 +17,7 @@ const carouselItems = [
   {
     id: 1,
     title: 'Juliana M., 34 anos – cirurgia ortopédica',
-    description: '"A estrutura é moderna, mas o que realmente me marcou foi o cuidado da equipe. Em nenhum momento me senti só mais um paciente.ui tratada com atenção e respeito do início ao fim."',
+    description: '"A estrutura é moderna, mas o que realmente me marcou foi o cuidado da equipe. Em nenhum momento me senti só mais um paciente."',
     imgAlt: 'Imagem do Dr. Thiago Ferreira',
     imgSrc: images.paciente1,
   },

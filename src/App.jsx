@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NavBar from './components/navbar/navbar.jsx';
 // import VidaPlus from './components/contentpag/hospital.jsx';
 import './App.css';
+import ScrollToTop from './components/navbar/topScroll.jsx';
 
 
 const Hospital = React.lazy(()=> import('./components/contentpag/hospital.jsx'))
@@ -41,6 +42,7 @@ function App() {
       <NavBar toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
         <main>
         <Suspense fallback={<div>Aguarde...</div>}>
+        <ScrollToTop />{/*scroll pra subir o topo da tela ao clicar no link*/}
           <Routes>
           <Route path="/" element={<Hospital />} />{/*minha pagina principal com o hospital*/}
               <Route path="/hospital" element={<Hospital />} />

@@ -1,8 +1,9 @@
-import React from 'react';
+import React,{useState} from 'react';
 import images from './../../components/image'
 import style from './content.module.css';
 import UncontrolledExample from './carousel/carousel';
 import { useNavigate } from 'react-router-dom';
+import LoaderModal from '../../components/navbar/loading';
 // import { BsFacebook, BsGithub, BsLinkedin, BsInstagram } from "react-icons/bs";
 
 
@@ -12,11 +13,33 @@ function ContentPag(){
 
   
     const currentYear = new Date().getFullYear();
-      const navigate = useNavigate();
+
+     const navigate = useNavigate();
+      const [loading, setLoading] = useState(false);
+           
+           //   const handleClick = () => {
+           //     navigate('/login');
+           //   };
+           
+            const handleLoginClick = () => {
+             setLoading(true);
+             setTimeout(() => {
+                 setLoading(false);
+                 navigate('/login');
+             }, 2000);
+         };
+
+
+
+
+
+
+
+      // const navigate = useNavigate();
       
-        const handleClick = () => {
-          navigate('/login');
-        };
+      //   const handleClick = () => {
+      //     navigate('/login');
+      //   };
   
 
   //text edit in <span style={colortext}>
@@ -37,6 +60,7 @@ function ContentPag(){
     
       <div>
           <div>
+            {loading && <LoaderModal />}
           <div className={style.BackgroundConteiner}>
          <img src={images.backgroundMedicoPaciente} alt="medican"/>
          <div className={style.BackgroundCover}></div>
@@ -116,7 +140,7 @@ com segurança e eficiência. Contamos com profissionais experientes em diversas
 </ul>
 Equipe preparada, estrutura completa e compromisso com o cuidado.
        </p>
-       <button className={style.Botao} onClick={handleClick}>
+       <button className={style.Botao} onClick={handleLoginClick}>
      Marque uma Consulta 
     </button>
          </div>

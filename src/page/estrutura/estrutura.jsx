@@ -1,7 +1,8 @@
-import React from 'react';
+import React,{useState} from 'react';
 import images from '../../components/image'
 import style from './content.module.css';
 import { useNavigate } from 'react-router-dom';
+import LoaderModal from '../../components/navbar/loading';
 // import { height } from '@fortawesome/free-solid-svg-icons/fa0';
 // import { BsFacebook, BsGithub, BsLinkedin, BsInstagram } from "react-icons/bs";
 
@@ -12,11 +13,27 @@ function ContentPag(){
 
 
     
-  const navigate = useNavigate();
-  
-    const handleClick = () => {
-      navigate('/login');
-    };
+ const navigate = useNavigate();
+  const [loading, setLoading] = useState(false);
+       
+       //   const handleClick = () => {
+       //     navigate('/login');
+       //   };
+       
+        const handleLoginClick = () => {
+         setLoading(true);
+         setTimeout(() => {
+             setLoading(false);
+             navigate('/login');
+         }, 2000);
+     };
+
+
+
+
+
+
+    
     const currentYear = new Date().getFullYear();
     const StyleSolo = {
       borderRadius: '10px',
@@ -42,6 +59,7 @@ function ContentPag(){
     
       <div>
           <div>
+            {loading && <LoaderModal />}
           <div className={style.BackgroundConteiner}>
          <img src={images.backgroundEstruture} alt="medican"/>
          <div className={style.BackgroundCover}></div>
@@ -157,7 +175,7 @@ function ContentPag(){
 
 <section className={style.Agendamento}>
     <div className={style.Linha}></div>
-  <button className={style.Botao} onClick={handleClick}>
+  <button className={style.Botao} onClick={handleLoginClick}>
       Marque uma Consulta 
      </button>
 </section>

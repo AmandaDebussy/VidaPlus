@@ -1,28 +1,37 @@
-import React, { useState, useEffect } from 'react';
+import React, { useRef,useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import style from './navbar.module.css';
 import LogoPagNav from '../../assets/vidapluslogo.png';
 import classNames from 'classnames';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSun, faMoon, faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
-import LoaderModal from '../navbar/loading'; // ajuste o caminho conforme necessário
+import LoaderModal from '../navbar/loading'; 
 
 function NavBar({ toggleDarkMode, darkMode }) {
     const [isOpen, setIsOpen] = useState(false);
     const [loading, setLoading] = useState(false);
     const navigate = useNavigate();
+    const menuRef = useRef(null);
+
+    
+
+
+    const handleLinkClick = () => setIsOpen(false);
 
     const toggleMenu = () => {
         setIsOpen(prev => !prev);
     };
 
+    
     const handleLoginClick = () => {
         setLoading(true);
         setTimeout(() => {
             setLoading(false);
             navigate('/Login');
-        }, 1000);
+        }, 2000);
     };
+
+
 
     useEffect(() => {
         const handleResize = () => {
@@ -35,7 +44,34 @@ function NavBar({ toggleDarkMode, darkMode }) {
         return () => {
             window.removeEventListener('resize', handleResize);
         };
+        
     }, []);
+
+
+
+/*menu fecha ao clicar fora do bloco do navbar*/
+
+useEffect(() => {
+    const handleClickOutside = (event) => {
+        if (
+            menuRef.current &&
+            !menuRef.current.contains(event.target) &&
+            !event.target.closest(`.${style.hamburger}`)/*permite que meu X funcione e ignora ele*/
+        ) {
+            setIsOpen(false);
+        }
+    };
+
+    if (isOpen) {
+        document.addEventListener('mousedown', handleClickOutside);
+    }
+
+    return () => {
+        document.removeEventListener('mousedown', handleClickOutside);
+    };
+}, [isOpen]);
+
+
 
     return (
         <header className={classNames(style.bgcolorNavBar, {
@@ -61,25 +97,25 @@ function NavBar({ toggleDarkMode, darkMode }) {
                                 <img src={LogoPagNav} className={style.LogoPagNav} alt="Logo VidaPlus" />
                             </Link>
                         </span>
-
-                        <ul className={classNames(style.NavBar, { [style.show]: isOpen })}>
+                      
+                        <ul className={classNames(style.NavBar, { [style.show]: isOpen })} ref={menuRef} >
                             <li className={style.NavBarElement}>
-                                <Link to="/Hospital" className={classNames(style.NavBarLink, style.NavBarLinkUnderline)}>Hospital</Link>
+                                <Link to="/Hospital" className={classNames(style.NavBarLink, style.NavBarLinkUnderline)} onClick={handleLinkClick}>Hospital</Link>
                             </li>
                             <li className={style.NavBarElement}>
-                                <Link to="/Estrutura" className={classNames(style.NavBarLink, style.NavBarLinkUnderline)}>Estrutura</Link>
+                                <Link to="/Estrutura" className={classNames(style.NavBarLink, style.NavBarLinkUnderline)} onClick={handleLinkClick}>Estrutura</Link>
                             </li>
                             <li className={style.NavBarElement}>
-                                <Link to="/Servicos" className={classNames(style.NavBarLink, style.NavBarLinkUnderline)}>Serviços</Link>
+                                <Link to="/Servicos" className={classNames(style.NavBarLink, style.NavBarLinkUnderline)} onClick={handleLinkClick}>Serviços</Link>
                             </li>
                             <li className={style.NavBarElement}>
-                                <Link to="/Qualidade" className={classNames(style.NavBarLink, style.NavBarLinkUnderline)}>Qualidade</Link>
+                                <Link to="/Qualidade" className={classNames(style.NavBarLink, style.NavBarLinkUnderline)} onClick={handleLinkClick}>Qualidade</Link>
                             </li>
                             <li className={style.NavBarElement}>
-                                <Link to="/Pacientes" className={classNames(style.NavBarLink, style.NavBarLinkUnderline)}>Pacientes</Link>
+                                <Link to="/Pacientes" className={classNames(style.NavBarLink, style.NavBarLinkUnderline)} onClick={handleLinkClick}>Pacientes</Link>
                             </li>
                             <li className={style.NavBarElement}>
-                                <button onClick={handleLoginClick} className={classNames(style.NavBarLink, style.NavBarLinkUnderline)}>
+                                <button onClick={()=>{handleLoginClick() ; handleLinkClick()}} className={classNames(style.NavBarLink, style.NavBarLinkUnderline)}  >
                                     Login
                                 </button>
                             </li>

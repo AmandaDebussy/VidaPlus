@@ -343,7 +343,31 @@
 }
 
 
-   .ContentSection {
+/*estilos novos*/
+
+.ContentSection {
+    margin: 10px;
+    padding: 10px;
+     padding-top: 5em;
+  }
+
+  .ContentSection h1 {
+    font-size: 25px;
+  }
+
+  .ContentSection p {
+    font-size: 15px;
+  }
+
+
+
+
+
+/*estilos antigos*/
+
+
+
+   /* .ContentSection {
     margin: 10px;
     padding: 10px;
   }
@@ -354,7 +378,9 @@
 
   .ContentSection p {
     font-size: 15px;
-  }
+  } */
+
+
 
   .ContentSection img {
     width: 100%;
@@ -406,7 +432,18 @@
 
 
 .ContentSection button{
+   width: 100%;
+    /* max-width: 350px; */
+}
+
+/*adicionei esse classe pra ajustar o tamanho do botao*/
+.Botao{
   width: 100%;
+  max-width: 290px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+
 }
 
   .contentImageMedicos img{

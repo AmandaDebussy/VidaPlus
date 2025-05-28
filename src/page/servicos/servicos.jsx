@@ -1,7 +1,8 @@
-import React from 'react';
+import React,{useState} from 'react';
 import images from '../../components/image'
 import style from './content.module.css';
 import { useNavigate } from 'react-router-dom';
+import LoaderModal from '../../components/navbar/loading';
 // import { height } from '@fortawesome/free-solid-svg-icons/fa0';
 // import { BsFacebook, BsGithub, BsLinkedin, BsInstagram } from "react-icons/bs";
 
@@ -11,11 +12,22 @@ import { useNavigate } from 'react-router-dom';
 function ContentPag(){
 
 
-  const navigate = useNavigate();
+     
+     const navigate = useNavigate();
+      const [loading, setLoading] = useState(false);
+           
+           //   const handleClick = () => {
+           //     navigate('/login');
+           //   };
+           
+            const handleLoginClick = () => {
+             setLoading(true);
+             setTimeout(() => {
+                 setLoading(false);
+                 navigate('/login');
+             }, 2000);
+         };
 
-  const handleClick = () => {
-    navigate('/login');
-  };
 
     const currentYear = new Date().getFullYear();
     // const StyleSolo = {
@@ -42,6 +54,7 @@ function ContentPag(){
     
       <div>
           <div>
+            {loading && <LoaderModal />}
           <div className={style.BackgroundConteiner}>
          <img src={images.backgroundMedicoComPaciente} alt="medican"/>
          <div className={style.BackgroundCover}></div>
@@ -123,7 +136,7 @@ com segurança e eficiência. Contamos com profissionais experientes em diversas
 </ul>
 Equipe preparada, estrutura completa e compromisso com o cuidado.
        </p>
-       <button className={style.Botao} onClick={handleClick}>
+       <button className={style.Botao} onClick={handleLoginClick}>
      Marque uma Consulta 
     </button>
          </div>

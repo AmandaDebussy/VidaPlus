@@ -1,17 +1,6 @@
 // src/components/LoaderModal.jsx
 import React from 'react';
-
-const LoaderModal = () => {
-  return (
-    <div style={overlayStyle}>
-      <div style={spinnerStyle}>Carregando...</div>
-    </div>
-  );
-};
-
-
-
-
+import images from '../image'
 
 const overlayStyle = {
   position: 'fixed',
@@ -24,9 +13,23 @@ const overlayStyle = {
 };
 
 const spinnerStyle = {
-  fontSize: '24px',
-  fontWeight: 'bold',
-  color: '#3131ED'
+  // fontSize: '24px',
+  // fontWeight: 'bold',
+  // color: '#3131ED'
+//  width: '50px'
+ 
 };
+
+
+const LoaderModal = () => {
+  return (
+    <div style={overlayStyle}>
+      <div>
+        <img src={images.gifCarregando} style={spinnerStyle} alt='carregando'></img>
+      </div>
+    </div>
+  );
+};
+
 
 export default LoaderModal;

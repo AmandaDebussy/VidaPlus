@@ -1,8 +1,9 @@
-import React from 'react';
+import React, {useState} from 'react';
 import images from './../image'
 import style from './content.module.css';
 import UncontrolledExample from '../carousel/carousel';
 import { useNavigate } from 'react-router-dom';
+import LoaderModal from '../../components/navbar/loading'; 
 // import { BsFacebook, BsGithub, BsLinkedin, BsInstagram } from "react-icons/bs";
 
 
@@ -12,12 +13,23 @@ function ContentPag(){
 
   
     const currentYear = new Date().getFullYear();
+    const [loading, setLoading] = useState(false);
+
+
+
       const navigate = useNavigate();
       
-        const handleClick = () => {
-          navigate('/login');
-        };
-  
+      //   const handleClick = () => {
+      //     navigate('/login');
+      //   };
+      
+       const handleLoginClick = () => {
+        setLoading(true);
+        setTimeout(() => {
+            setLoading(false);
+            navigate('/login');
+        }, 2000);
+    };
 
   //text edit in <span style={colortext}>
   // const colortext = {
@@ -37,6 +49,7 @@ function ContentPag(){
     
       <div>
           <div>
+         {loading && <LoaderModal />}
           <div className={style.BackgroundConteiner}>
          <img src={images.BackgroundMedican} alt="medican"/>
          <div className={style.BackgroundCover}></div>
@@ -134,7 +147,7 @@ function ContentPag(){
       especialistas da área
     </h2>
     <div className={style.Linha}></div>
-    <button className={style.Botao} onClick={handleClick}>
+    <button className={style.Botao} onClick={handleLoginClick}>
       Marque uma Consulta 
     </button>
   </div>

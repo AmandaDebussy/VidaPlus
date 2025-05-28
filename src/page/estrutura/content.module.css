@@ -348,11 +348,27 @@
 }
 
 
+/*novos estilos aplicados pra teste*/
+
+.ContentSection {
+    margin: 10px;
+    padding: 10px;
+     padding-top: 5em;
+  }
+
+  .ContentSection h1 {
+    font-size: 25px;
+  }
+
+  .ContentSection p {
+    font-size: 15px;
+  }
 
 
 
+/*estilos antigos*/
 
-  .ContentSection{
+  /* .ContentSection{
     margin: 10px;
     padding: 30px;
 
@@ -360,17 +376,15 @@
 
   .ContentSection h1{
     font-size: 25px;
-    /* white-space:normal; */
-   
+    /* white-space:normal; 
     
-
   }
 
   
-  .ContentSection p{
+  /* .ContentSection p{
     font-size: 15px;
 
-  }
+  }  */
   
  .ContentSection img {
   width: 100%;

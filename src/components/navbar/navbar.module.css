@@ -283,11 +283,11 @@
 @media (max-width: 828px) {
     
     .LogoPagNav{
-        width: 64px;
+        width: 80px;/*ajuste de tamanho do icone*/
         margin: 10px;
         position:fixed;
         left: 10px;
-        top:10px !important; /*ajuste de tamanho do icone*/
+        top:4px !important; 
     }
     
     

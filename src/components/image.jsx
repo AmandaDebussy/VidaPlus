@@ -41,6 +41,7 @@ import paciente1 from './../assets/pacientes/paciente1.png'
 import paciente2 from './../assets/pacientes/paciente2.png'
 import paciente3 from './../assets/pacientes/paciente3.png'
 import paciente4 from './../assets/pacientes/paciente4.png'
+import gifCarregando from './../assets/Animation.gif'
 
 
 const images = {
@@ -86,7 +87,8 @@ const images = {
     paciente2,
     paciente3,
     paciente4,
-    comentario
+    comentario,
+    gifCarregando
     
 
 
