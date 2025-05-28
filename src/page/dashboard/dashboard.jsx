@@ -1,11 +1,11 @@
 // pages/Dashboard.jsx
-import { useState } from "react";
+import { useState} from "react";
 import './contet.dashboard.css'
 import images from "../../components/image";
 import '../login/footerstyle.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faIdCard, faStethoscope, faCalendarAlt, faClock } from '@fortawesome/free-solid-svg-icons';
-
+import confetti from 'canvas-confetti';
 
 export default function Dashboard() {
   const [pacientes, setPacientes] = useState([]);
@@ -25,7 +25,16 @@ export default function Dashboard() {
     setService("");
     setData("");
     setHorario("");
+
+    confetti({
+    particleCount: 150,
+    spread: 70,
+    origin: { y: 0.6 }
+  });
+
+    
   }
+
 
   return (
     <div>

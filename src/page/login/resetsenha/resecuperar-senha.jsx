@@ -2,6 +2,8 @@ import { useState } from "react";
 import './content.senha.css'; // novo CSS
 import '../footerstyle.css'; 
 import images from '../../../components/image'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope} from '@fortawesome/free-solid-svg-icons';
 
 
 
@@ -44,7 +46,7 @@ export default function RecuperarSenha() {
         ) : (
           <div className="text-center mt-4 ">
             <p className="text-success">
-              Um link de recuperação foi enviado para <strong>{email}</strong>.
+              Um link de recuperação foi enviado para <strong>{email}</strong><FontAwesomeIcon icon={faEnvelope} className="ColorIcone" />
             </p>
           </div>
         )}
