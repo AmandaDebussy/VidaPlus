@@ -1,7 +1,6 @@
 import React, { useState, useEffect} from 'react';
 import { Suspense } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import NavBar from './components/navbar/navbar.jsx';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';import NavBar from './components/navbar/navbar.jsx';
 // import VidaPlus from './components/contentpag/hospital.jsx';
 import './App.css';
 import ScrollToTop from './components/navbar/topScroll.jsx';
@@ -35,7 +34,6 @@ function App() {
   };
 
   return (
-    <Router>
       <div className={darkMode ? 'App dark' : 'App'}>
         {/*acima em <div darkMode ? 'App dark' : 'App'> aplica o tema alternando entre preto e branco na pag principal
       que fica tambem na layer nav por causa do buttom moon and sun*/}
@@ -57,7 +55,6 @@ function App() {
         </Suspense>
       </main>
     </div>
-  </Router>
   );
 }
 
