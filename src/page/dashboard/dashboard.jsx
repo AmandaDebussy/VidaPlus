@@ -15,6 +15,7 @@ export default function Dashboard() {
   const [data,setData] = useState("");
   const [horario, setHorario] = useState("");
   const currentYear = new Date().getFullYear();
+  const [cadastrado, setCadastrado] = useState(false);
 
   function handleCadastrar(e) {
     e.preventDefault();
@@ -31,60 +32,72 @@ export default function Dashboard() {
     spread: 70,
     origin: { y: 0.6 }
   });
-
+setCadastrado(true);
     
   }
 
 
   return (
-    <div>
+  <div>
     <div className="p-4 ContentCadastro">
       <div className="ContentCard">
-      <h2>Cadastro de Pacientes</h2>
-      <form onSubmit={handleCadastrar}>
-        <label className="form-label text-primary">Nome do Paciente</label>
-        <input value={nome} onChange={e => setNome(e.target.value)} placeholder="Nome" required />
-        <label className="form-label text-primary">Cpf</label>
-        <input value={cpf} onChange={e => setCpf(e.target.value)} placeholder="CPF" required />
-        <select
-          value={service}
-          onChange={e => setService(e.target.value)}
-          required
-        >
-          <option value="" disabled>Selecione um serviço</option>
-          <option value="Ortopedia">Ortopedia</option>
-          <option value="Cirurgia Geral">Cirurgia Geral</option>
-          <option value="Clínica Médica">Clínica Médica</option>
-          <option value="Pediatria">Pediatria</option>
-          <option value="Ginecologia">Ginecologia</option>
-          <option value="Cardiologia">Cardiologia</option>
-          {/* <option value="Outros Procedimentos Humanizados">Outros Procedimentos Humanizados</option> */}
-        </select>
-        <br />
-        <label className="form-label text-primary">Data da Consulta</label>
-        <input type="date" value={data} onChange={e => setData(e.target.value)} required/>
-        <label className="form-label text-primary">Horario da Consulta</label>
-        <input type="time" value={horario} onChange={e => setHorario(e.target.value)}required/>
-       <br />
-        <button type="submit">Cadastrar</button>
-      </form>
-<br />
-      <h3>Lista do Paciente</h3>
-      <ul type="none">
-        {pacientes.map((p, i) => (
-  <li key={i} className="paciente-info">
-     <p><FontAwesomeIcon icon={faUser} /> <strong>Nome:</strong> {p.nome}</p>
-  <p><FontAwesomeIcon icon={faIdCard} /> <strong>CPF:</strong> {p.cpf}</p>
-  <p><FontAwesomeIcon icon={faStethoscope} /> <strong>Serviço:</strong> {p.service}</p>
-  <p><FontAwesomeIcon icon={faCalendarAlt} /> <strong>Data:</strong> {p.data}</p>
-  <p><FontAwesomeIcon icon={faClock} /> <strong>Horário:</strong> {p.horario}</p>
-  <br />
-  <p><strong>⚠️ Favor chegar no horario marcado!</strong></p>
-  </li>
-))}
-      </ul>
+        {!cadastrado ? (
+          <>
+            <h2>Cadastro de Pacientes</h2>
+            <form onSubmit={handleCadastrar}>
+              <label className="form-label text-primary">Nome do Paciente</label>
+              <input value={nome} onChange={e => setNome(e.target.value)} placeholder="Nome" required />
+              <label className="form-label text-primary">Cpf</label>
+              <input value={cpf} onChange={e => setCpf(e.target.value)} placeholder="CPF" required />
+              <select
+                value={service}
+                onChange={e => setService(e.target.value)}
+                required
+              >
+                <option value="" disabled>Selecione um serviço</option>
+                <option value="Ortopedia">Ortopedia</option>
+                <option value="Cirurgia Geral">Cirurgia Geral</option>
+                <option value="Clínica Médica">Clínica Médica</option>
+                <option value="Pediatria">Pediatria</option>
+                <option value="Ginecologia">Ginecologia</option>
+                <option value="Cardiologia">Cardiologia</option>
+              </select>
+              <br />
+              <label className="form-label text-primary">Data da Consulta</label>
+              <input type="date" value={data} onChange={e => setData(e.target.value)} required />
+              <label className="form-label text-primary">Horario da Consulta</label>
+              <input type="time" value={horario} onChange={e => setHorario(e.target.value)} required />
+              <br />
+              <button type="submit">Cadastrar</button>
+            </form>
+          </>
+        ) : (
+          <>
+            <h3>Cadastro realizado com sucesso! 🎉</h3>
+            <h3>Lista do Paciente:</h3>
+            <ul type="none">
+              {pacientes.map((p, i) => (
+                <li key={i} className="paciente-info">
+                  <p><FontAwesomeIcon icon={faUser} /> <strong>Nome:</strong> {p.nome}</p>
+                  <p><FontAwesomeIcon icon={faIdCard} /> <strong>CPF:</strong> {p.cpf}</p>
+                  <p><FontAwesomeIcon icon={faStethoscope} /> <strong>Serviço:</strong> {p.service}</p>
+                  <p><FontAwesomeIcon icon={faCalendarAlt} /> <strong>Data:</strong> {p.data}</p>
+                  <p><FontAwesomeIcon icon={faClock} /> <strong>Horário:</strong> {p.horario}</p>
+                  <br />
+                  <p><strong>⚠️ Favor chegar no horário marcado!</strong></p>
+                </li>
+              ))}
+            </ul>
+            <div className="ButtomReturn">
+    <button onClick={() => setCadastrado(false)}>
+      Voltar à tela de cadastro
+    </button>
+    </div>
+          </>
+        )}
       </div>
     </div>
+
     <footer className="footer">
   <div className="footer-content">
     <div className="footer-left">
