@@ -18,10 +18,11 @@
     align-items: center;
     min-height: 80vh;
     margin-left: 30px;
-    background-color: var(--bs-light);
+    
   }
   
   .recuperar-card {
+    background-color: var(--bs-white);
     border: 1px solid var(--bs-blue);
     padding: 2.5rem;
     border-radius: 15px;
