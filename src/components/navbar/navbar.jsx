@@ -97,7 +97,7 @@ useEffect(() => {
                                 <img src={LogoPagNav} className={style.LogoPagNav} alt="Logo VidaPlus" />
                             </Link>
                         </span>
-                      
+                      {isOpen && <div className={style.overlay} onClick={() => setIsOpen(false)}></div>}
                         <ul className={classNames(style.NavBar, { [style.show]: isOpen })} ref={menuRef} >
                             <li className={style.NavBarElement}>
                                 <Link to="/Hospital" className={classNames(style.NavBarLink, style.NavBarLinkUnderline)} onClick={handleLinkClick}>Hospital</Link>

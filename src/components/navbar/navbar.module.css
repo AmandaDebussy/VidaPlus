@@ -311,7 +311,21 @@
         bottom: 20px;
       }
 
-    
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(3, 6, 41, 0.473);
+  z-index: -1000; 
+  transition: opacity 0.3s ease;
+}
+
+.overlayHidden {
+  display: none;
+}
+
 
 
 
@@ -336,13 +350,16 @@
         top: 0;
         left: 0;
         width: 70%;/*mudei o tamanho do bloco do navbar ao clicar tipo como o do linkdlin*/
-        height: 100vh; 
+        height: 100%; 
         background-color: var(--bs-blue);
         transform: translateX(-100%); 
         opacity: 0; 
         transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; 
         z-index: -1000;
     }
+
+
+
 
     .lineblock{
         display: none;
